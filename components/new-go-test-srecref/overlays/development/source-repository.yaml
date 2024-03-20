@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: new-go-test-srecref-repository
+spec:
+  url: https://github.com/stephanie-cy/new-go-test-srecref

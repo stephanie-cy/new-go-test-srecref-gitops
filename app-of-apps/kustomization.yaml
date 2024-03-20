@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: new-go-test-srecref 
+  janus-idp.io/tekton: new-go-test-srecref
+  backstage.io/kubernetes-id: new-go-test-srecref
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: new-go-test-srecref
+resources: 
+- application-dev.yaml 
+- application-stage.yaml 
+- application-prod.yaml  
